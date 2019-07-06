@@ -23,6 +23,25 @@
 
 <!-- tocstop -->
 
+## Usage
+
+```console
+echo "1.0.0" | versio bump stdin minor
+
+versio bump stdin minor < VERSION.txt
+
+versio bump file minor VERSION.txt
+
+versio bump file set --pre-release dev VERSION.txt
+versio bump file set --minor 2 VERSION.txt
+
+versio bump cargo patch
+
+versio bump cargo minor --pre-release dev
+
+versio bump cargo minor --build-metadata git --stdout
+```
+
 ## CI Status
 
 ### Build (master branch)
