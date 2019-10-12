@@ -1,4 +1,4 @@
-# versio
+# Versio
 
 |                  |                                                         |
 | ---------------: | ------------------------------------------------------- |
@@ -13,17 +13,51 @@
 
 <!-- toc -->
 
+- [Installation](#installation)
+  - [Cargo Install](#cargo-install)
+  - [From Source](#from-source)
 - [Usage](#usage)
 - [CI Status](#ci-status)
   - [Build (master branch)](#build-master-branch)
   - [Test (master branch)](#test-master-branch)
   - [Check (master branch)](#check-master-branch)
 - [Code of Conduct](#code-of-conduct)
+- [Issues](#issues)
+- [Contributing](#contributing)
+- [Release History](#release-history)
+- [Authors](#authors)
 - [License](#license)
 
 <!-- tocstop -->
 
+## Installation
+
+### Cargo Install
+
+If [Rust](https://rustup.rs/) is installed, then installing with Cargo is
+straight forward:
+
+```console
+$ cargo install versio
+```
+
+### From Source
+
+To install from source, you can clone the Git repository, build with Cargo and
+copy the binary into a destination directory. This will build the project from
+the latest commit on the master branch, which may not correspond to the latest
+stable release:
+
+```console
+$ git clone https://github.com/fnichol/versio.git
+$ cd versio
+$ cargo build --release
+$ cp ./target/release/versio /dest/path/
+```
+
 ## Usage
+
+Some quick examples of usages:
 
 ```console
 echo "1.0.0" | versio bump stdin minor
@@ -46,7 +80,7 @@ versio bump cargo minor --build-metadata git --stdout
 
 ### Build (master branch)
 
-| Operating System | Stable Rust                                                             | Nightly Rust                                                              | Oldest Rust                                                             |
+| Operating System | Stable Rust                                                             | Nightly Rust                                                              | <abbr title="Minimum Supported Rust Version">MSRV</abbr>                |
 | ---------------: | ----------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 |          FreeBSD | [![FreeBSD Stable Build Status][badge-stable_freebsd-build]][ci-master] | [![FreeBSD Nightly Build Status][badge-nightly_freebsd-build]][ci-master] | [![FreeBSD Oldest Build Status][badge-oldest_freebsd-build]][ci-master] |
 |            Linux | [![Linux Stable Build Status][badge-stable_linux-build]][ci-master]     | [![Linux Nightly Build Status][badge-nightly_linux-build]][ci-master]     | [![Linux Oldest Build Status][badge-oldest_linux-build]][ci-master]     |
@@ -55,7 +89,7 @@ versio bump cargo minor --build-metadata git --stdout
 
 ### Test (master branch)
 
-| Operating System | Stable Rust                                                           | Nightly Rust                                                            | Oldest Rust                                                           |
+| Operating System | Stable Rust                                                           | Nightly Rust                                                            | <abbr title="Minimum Supported Rust Version">MSRV</abbr>              |
 | ---------------: | --------------------------------------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------- |
 |          FreeBSD | [![FreeBSD Stable Test Status][badge-stable_freebsd-test]][ci-master] | [![FreeBSD Nightly Test Status][badge-nightly_freebsd-test]][ci-master] | [![FreeBSD Oldest Test Status][badge-oldest_freebsd-test]][ci-master] |
 |            Linux | [![Linux Stable Test Status][badge-stable_linux-test]][ci-master]     | [![Linux Nightly Test Status][badge-nightly_linux-test]][ci-master]     | [![Linux Oldest Test Status][badge-oldest_linux-test]][ci-master]     |
@@ -72,6 +106,30 @@ versio bump cargo minor --build-metadata git --stdout
 ## Code of Conduct
 
 This project follows the [Rust Code of Conduct][code-of-conduct].
+
+## Issues
+
+If you have any problems with or questions about this project, please contact us
+through a [GitHub issue][issues].
+
+## Contributing
+
+You are invited to contribute to new features, fixes, or updates, large or
+small; we are always thrilled to receive pull requests, and do our best to
+process them as fast as we can.
+
+Before you start to code, we recommend discussing your plans through a [GitHub
+issue][issues], especially for more ambitious contributions. This gives other
+contributors a chance to point you in the right direction, give you feedback on
+your design, and help you find out if someone else is working on the same thing.
+
+## Release History
+
+See the [changelog] for a full release history.
+
+## Authors
+
+Created and maintained by [Fletcher Nichol][fnichol] (<fnichol@nichol.ca>).
 
 ## License
 
@@ -141,12 +199,15 @@ licensed as above, without any additional terms or conditions.
 [badge-stable_windows-test]:
   https://img.shields.io/cirrus/github/fnichol/versio.svg?style=flat-square&task=test_stable_windows&script=test
 [badge-version]: https://img.shields.io/crates/v/versio.svg?style=flat-square
+[changelog]: https://github.com/fnichol/versio/blob/master/CHANGELOG.md
 [ci]: https://cirrus-ci.com/github/fnichol/versio
 [ci-master]: https://cirrus-ci.com/github/fnichol/versio/master
 [code-of-conduct]: https://www.rust-lang.org/policies/code-of-conduct
 [commonmark]: https://commonmark.org/
 [crate]: https://crates.io/crates/versio
 [docs]: https://docs.rs/versio
+[fnichol]: https://github.com/fnichol
 [github-releases]: https://github.com/fnichol/versio/releases
 [github]: https://github.com/fnichol/versio
+[issues]: https://github.com/fnichol/versio/issues
 [license]: https://github.com/fnichol/versio/blob/master/LICENSE.txt
