@@ -13,13 +13,13 @@
 
 <!-- toc -->
 
+- [Usage](#usage)
 - [CI Status](#ci-status)
   - [Build (master branch)](#build-master-branch)
   - [Test (master branch)](#test-master-branch)
   - [Check (master branch)](#check-master-branch)
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
-  - [Contribution](#contribution)
 
 <!-- tocstop -->
 
@@ -75,20 +75,11 @@ This project follows the [Rust Code of Conduct][code-of-conduct].
 
 ## License
 
-Licensed under either of
-
-- The Apache License, Version 2.0 ([LICENSE-APACHE][license-apachev2] or
-  <http://www.apache.org/licenses/LICENSE-2.0>)
-- The MIT license ([LICENSE-MIT][license-mit] or
-  <http://opensource.org/licenses/MIT>)
-
-at your option.
-
-### Contribution
+Licensed under the Mozilla Public License Version 2.0 ([LICENSE.txt][license]).
 
 Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
-dual licensed as above, without any additional terms or conditions.
+for inclusion in the work by you, as defined in the MPL-2.0 license, shall be
+licensed as above, without any additional terms or conditions.
 
 [badge-check-format]:
   https://img.shields.io/cirrus/github/fnichol/versio.svg?style=flat-square&task=check&script=format
@@ -158,5 +149,4 @@ dual licensed as above, without any additional terms or conditions.
 [docs]: https://docs.rs/versio
 [github-releases]: https://github.com/fnichol/versio/releases
 [github]: https://github.com/fnichol/versio
-[license-apachev2]: https://github.com/fnichol/versio/blob/master/LICENSE-APACHE
-[license-mit]: https://github.com/fnichol/versio/blob/master/LICENSE-MIT
+[license]: https://github.com/fnichol/versio/blob/master/LICENSE.txt
