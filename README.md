@@ -105,7 +105,9 @@ versio bump cargo minor --build-metadata git --stdout
 
 ## Code of Conduct
 
-This project follows the [Rust Code of Conduct][code-of-conduct].
+This project adheres to the Contributor Covenant [code of
+conduct][code-of-conduct]. By participating, you are expected to uphold this
+code. Please report unacceptable behavior to fnichol@nichol.ca.
 
 ## Issues
 
@@ -202,7 +204,8 @@ licensed as above, without any additional terms or conditions.
 [changelog]: https://github.com/fnichol/versio/blob/master/CHANGELOG.md
 [ci]: https://cirrus-ci.com/github/fnichol/versio
 [ci-master]: https://cirrus-ci.com/github/fnichol/versio/master
-[code-of-conduct]: https://www.rust-lang.org/policies/code-of-conduct
+[code-of-conduct]:
+  https://github.com/fnichol/versio/blob/master/CODE_OF_CONDUCT.md
 [commonmark]: https://commonmark.org/
 [crate]: https://crates.io/crates/versio
 [docs]: https://docs.rs/versio
